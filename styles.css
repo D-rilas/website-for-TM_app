@@ -1,31 +1,69 @@
+/* Style général */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f4f4f9; /* Couleur de fond */
-  color: #333; /* Couleur du texte */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .crown {
+  font-size: 3rem;
 }
 
 h1 {
-  text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #1a73e8; /* Couleur bleue pour le titre */
+  font-weight: bold;
+  margin: 10px 0;
 }
 
-.content {
-  max-width: 800px; /* Largeur maximale du conteneur */
-  padding: 20px; /* Espacement intérieur */
-  text-align: center; /* Centre le texte dans chaque paragraphe */
+/* Conteneur principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espacement entre les boîtes */
 }
 
-.content p {
-  margin-bottom: 20px; /* Sépare les paragraphes */
-  line-height: 1.6; /* Espacement entre les lignes */
+/* Style des boîtes */
+.box {
+  width: 80%;
+  max-width: 300px;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
+/* Brillance au survol */
+.box:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  transform: scale(1.05); /* Légère augmentation de taille */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .box {
+    width: 90%; /* Réduction de la largeur sur mobile */
+  }
+
+  h1 {
+    font-size: 2rem; /* Taille de titre réduite sur mobile */
+  }
+}
