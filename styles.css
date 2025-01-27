@@ -1,15 +1,15 @@
+/* Conteneur principal pour la safe area */
+.container {
+  padding: 30px; /* Ajoute une zone de sécurité autour du contenu */
+  box-sizing: border-box; /* Inclut le padding dans les dimensions du conteneur */
+}
+
 /* Style général */
 body {
   margin: 0;
-  padding: 30px; /* Zone de sécurité autour de la page */
   background-color: black;
   color: white;
   font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100vh;
-  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
 }
 
 /* Titre principal */
@@ -28,12 +28,11 @@ h1 {
   margin: 10px 0;
 }
 
-/* Conteneur principal */
+/* Conteneur des boîtes */
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 20px; /* Espacement entre les boîtes */
+  gap: 20px;
 }
 
 /* Style des boîtes */
@@ -42,7 +41,7 @@ main {
   border: 2px solid white;
   border-radius: 10px;
   padding: 20px;
-  width: 70%; /* Largeur des boîtes */
+  width: 70%;
   text-align: center;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -59,14 +58,14 @@ main {
 
 /* Effets au survol */
 .box:hover {
-  transform: scale(1.05); /* Légère augmentation de taille */
+  transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
   .box {
-    width: 90%; /* Pleine largeur sur petits écrans */
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
