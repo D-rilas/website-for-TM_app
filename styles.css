@@ -42,19 +42,20 @@ main {
   border: 2px solid white;
   border-radius: 10px;
   padding: 20px;
-  width: 70%; /* Augmente la largeur des boîtes */
+  width: 70%; /* Largeur des boîtes */
   text-align: center;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Positionnement alterné */
+/* Positionnement alterné avec marge */
 .box.left {
-  margin-left: 0; /* Colle à gauche */
+  margin-left: 30px; /* Rapproche du centre depuis la gauche */
 }
 
 .box.right {
-  margin-left: auto; /* Colle à droite */
+  margin-right: 30px; /* Rapproche du centre depuis la droite */
+  margin-left: auto; /* Assure l'alignement à droite */
 }
 
 /* Effets au survol */
@@ -67,9 +68,12 @@ main {
 @media (max-width: 768px) {
   .box {
     width: 90%; /* Pleine largeur sur petits écrans */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   h1 {
     font-size: 2rem;
   }
 }
+
