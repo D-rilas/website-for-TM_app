@@ -72,9 +72,9 @@ main {
 
 /* Surbrillance de la première lettre */
 .highlight {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Réduction de la taille */
   font-weight: bold;
-  color: #ffcc00; /* Jaune pour la mise en avant */
+  color: white; /* Couleur blanche pour plus de subtilité */
 }
 
 /* Responsive design */
