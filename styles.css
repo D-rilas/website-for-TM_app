@@ -1,6 +1,6 @@
 /* Conteneur principal pour la safe area */
 .container {
-  padding: 50px; /* Augmente la zone de sécurité autour du contenu */
+  padding: 80px; /* Zone de sécurité significative */
   box-sizing: border-box; /* Inclut le padding dans les dimensions du conteneur */
 }
 
@@ -32,7 +32,7 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; /* Espacement entre les boîtes */
 }
 
 /* Style des boîtes */
@@ -74,3 +74,4 @@ main {
     font-size: 2rem;
   }
 }
+
