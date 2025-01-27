@@ -1,6 +1,6 @@
 /* Conteneur principal pour la safe area */
 .container {
-  padding: 15px; /* Zone de sécurité significative */
+  padding: 15px; /* Zone de sécurité réduite à 15px */
   box-sizing: border-box; /* Inclut le padding dans les dimensions du conteneur */
 }
 
@@ -26,6 +26,14 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 10px 0;
+}
+
+/* Style du message d'introduction */
+.intro-message {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
 }
 
 /* Conteneur des boîtes */
@@ -58,8 +66,15 @@ main {
 
 /* Effets au survol */
 .box:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Légère augmentation de taille */
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Surbrillance de la première lettre */
+.highlight {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00; /* Jaune pour la mise en avant */
 }
 
 /* Responsive design */
@@ -73,19 +88,4 @@ main {
   h1 {
     font-size: 2rem;
   }
-}
-
-/* Style du message d'introduction */
-.intro-message {
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 20px 0;
-  color: white;
-}
-
-/* Surbrillance de la première lettre */
-.highlight {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffcc00; /* Jaune pour la mise en avant */
 }
