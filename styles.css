@@ -1,91 +1,45 @@
-/* Conteneur principal pour la safe area */
-.container {
-  padding: 15px; /* Zone de sécurité réduite à 15px */
-  box-sizing: border-box; /* Inclut le padding dans les dimensions du conteneur */
-}
-
-/* Style général */
-body {
-  margin: 0;
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-/* Titre principal */
-header {
-  text-align: center;
+/* Style pour le bouton "Go to Bottom" */
+.go-to-bottom {
   margin: 20px 0;
-}
-
-header .crown {
-  font-size: 3rem;
-}
-
-h1 {
-  font-size: 2.5rem;
+  padding: 10px 20px;
+  background-color: #ffcc00; /* Couleur jaune pour attirer l'attention */
+  color: black;
+  font-size: 1rem;
   font-weight: bold;
-  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Style du message d'introduction */
-.intro-message {
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 20px 0;
-  color: white;
+.go-to-bottom:hover {
+  background-color: #e6b800;
+  transform: scale(1.1); /* Légère augmentation au survol */
 }
 
-/* Conteneur des boîtes */
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Espacement entre les boîtes */
-}
-
-/* Style des boîtes */
-.box {
-  background-color: black;
-  border: 2px solid white;
-  border-radius: 10px;
+/* Style pour la section en bas */
+#bottom {
+  margin-top: 40px;
   padding: 20px;
-  width: 70%;
   text-align: center;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: black;
+  color: white;
 }
 
-/* Positionnement alterné */
-.box.left {
-  margin-left: 0;
-}
-
-.box.right {
-  margin-left: auto;
-}
-
-/* Effets au survol */
-.box:hover {
-  transform: scale(1.05); /* Légère augmentation de taille */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-}
-
-/* Surbrillance de la première lettre */
-.highlight {
-  font-size: 1.2rem; /* Réduction de la taille */
+.download-app {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1a73e8; /* Couleur bleue */
+  color: white;
+  font-size: 1rem;
   font-weight: bold;
-  color: white; /* Couleur blanche pour plus de subtilité */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .box {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
+.download-app:hover {
+  background-color: #155cb0;
+  transform: scale(1.1); /* Légère augmentation au survol */
 }
