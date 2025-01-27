@@ -33,9 +33,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Espacement entre les boîtes */
   width: 100%;
-  max-width: 800px; /* Largeur maximale pour un rendu responsive */
+  max-width: 1000px;
+  gap: 20px; /* Espacement entre les boîtes */
+  padding: 20px;
 }
 
 /* Style des boîtes */
@@ -44,11 +45,19 @@ main {
   border: 2px solid white;
   border-radius: 10px;
   padding: 20px;
+  width: 45%; /* Largeur des boîtes */
   text-align: center;
-  width: 100%;
-  max-width: 700px; /* Largeur des boîtes */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Positionnement alterné */
+.box.left {
+  align-self: flex-start;
+}
+
+.box.right {
+  align-self: flex-end;
 }
 
 /* Effets au survol */
@@ -57,20 +66,14 @@ main {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-/* Espacement du texte dans chaque boîte */
-.box p {
-  margin: 0;
-  line-height: 1.6;
-}
-
 /* Responsive design */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .box {
+    width: 90%; /* Pleine largeur sur petits écrans */
+    align-self: center; /* Centre les boîtes sur mobile */
   }
 
-  .box {
-    padding: 15px;
-    width: 90%; /* Réduction de la largeur sur petits écrans */
+  h1 {
+    font-size: 2rem;
   }
 }
