@@ -1,7 +1,7 @@
 /* Style général */
 body {
   margin: 0;
-  padding: 0;
+  padding: 30px; /* Zone de sécurité autour de la page */
   background-color: black;
   color: white;
   font-family: Arial, sans-serif;
@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh;
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
 }
 
 /* Titre principal */
@@ -33,7 +34,6 @@ main {
   flex-direction: column;
   width: 100%;
   gap: 20px; /* Espacement entre les boîtes */
-  padding: 20px;
 }
 
 /* Style des boîtes */
@@ -48,14 +48,13 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Positionnement alterné avec marge */
+/* Positionnement alterné */
 .box.left {
-  margin-left: 30px; /* Rapproche du centre depuis la gauche */
+  margin-left: 0;
 }
 
 .box.right {
-  margin-right: 30px; /* Rapproche du centre depuis la droite */
-  margin-left: auto; /* Assure l'alignement à droite */
+  margin-left: auto;
 }
 
 /* Effets au survol */
@@ -76,4 +75,3 @@ main {
     font-size: 2rem;
   }
 }
-
