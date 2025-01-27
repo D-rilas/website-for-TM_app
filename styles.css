@@ -104,8 +104,8 @@ main {
 
 /* Bouton de téléchargement */
 .download-app {
-  display: inline-block; /* Pour centrer le bouton */
-  margin: 20px auto; /* Centré horizontalement */
+  display: block; /* Pour s'assurer qu'il peut être centré */
+  margin: 20px auto; /* Centre le bouton horizontalement */
   padding: 12px 25px;
   background-color: #87ceeb; /* Bleu ciel épique */
   color: white;
@@ -143,6 +143,12 @@ main {
     margin-right: auto;
   }
 
+  .download-app {
+    width: auto; /* Le bouton s'ajuste automatiquement */
+    padding: 10px 20px;
+    margin: 20px auto; /* Toujours centré */
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -153,3 +159,4 @@ main {
     font-size: 1.2rem;
   }
 }
+
