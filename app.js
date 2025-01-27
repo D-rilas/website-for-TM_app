@@ -2,8 +2,8 @@
 document.getElementById("downloadButton").addEventListener("click", function () {
   // Télécharger le fichier APK
   const link = document.createElement("a");
-  link.href = "./app_to_download/app.apk"; // Chemin du fichier APK
-  link.download = "app.apk";
+  link.href = "./app_to_download/app-release.apk"; // Chemin du fichier APK
+  link.download = "app-release.apk";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -13,4 +13,3 @@ document.getElementById("downloadButton").addEventListener("click", function () 
     window.location.href = "download.html";
   }, 1000); // Petite pause avant la redirection
 });
-
