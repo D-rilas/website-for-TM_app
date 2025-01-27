@@ -1,133 +1,31 @@
-/* Applique un style général à la page */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centre horizontalement les conteneurs */
-  justify-content: center; /* Centre verticalement si besoin */
-  min-height: 100vh;
-  background-color: #f5f5f5; /* Couleur de fond légère */
-  color: #333; /* Couleur du texte */
-}
-
-/* Style pour le titre */
-header {
-  text-align: center; /* Centre le texte */
-  margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous */
-  font-size: 2em; /* Augmente la taille du texte */
-  font-weight: bold;
-  color: #1a73e8; /* Couleur bleue pour le titre */
-}
-
-/* Conteneur pour chaque paragraphe */
-.container {
-  width: 80%; /* Largeur des conteneurs */
-  max-width: 800px; /* Largeur maximale pour les grands écrans */
-  background-color: white; /* Fond blanc pour les conteneurs */
-  border-radius: 8px; /* Coins arrondis */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour le relief */
-  margin: 10px 0; /* Espacement entre les conteneurs */
-  padding: 20px; /* Espace intérieur */
-  text-align: center; /* Centre le texte */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container:hover {
-  transform: translateY(-5px); /* Légère élévation au survol */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Accentuation de l'ombre */
-}
-
-/* Ajoute un peu d'espacement au texte */
-.container p {
-  margin: 0;
-  line-height: 1.6; /* Espacement entre les lignes */
-}
-
-/* Style pour les liens */
-a {
-  color: #1a73e8; /* Même couleur que le titre */
-  text-decoration: none; /* Supprime le soulignement */
-}
-
-a:hover {
-  text-decoration: underline; /* Ajoute un soulignement au survol */
-}
-
-a:focus {
-  outline: 2px dashed #1a73e8; /* Indique le focus pour les utilisateurs clavier */
-  outline-offset: 2px;
-}
-
-/* Styles pour le mode sombre */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-
-  .container {
-    background-color: #1e1e1e;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  }
-}
-
-/* Réactivité pour les petits écrans */
-@media (max-width: 600px) {
-  .container {
-    width: 95%; /* Réduit la largeur sur les petits écrans */
-    padding: 10px; /* Réduit le padding */
-  }
-
-  header {
-    font-size: 1.5em; /* Réduit la taille du titre */
-  }
-}
-
-/* Applique un style général à la page */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre horizontalement les conteneurs */
-  justify-content: center; /* Centre verticalement si besoin */
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  background-color: #f5f5f5; /* Couleur de fond légère */
+  background-color: #f4f4f9; /* Couleur de fond */
   color: #333; /* Couleur du texte */
 }
 
-/* Style pour le titre */
-header {
-  text-align: center; /* Centre le texte */
-  margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous */
-  font-size: 2em; /* Augmente la taille du texte */
-  font-weight: bold;
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
   color: #1a73e8; /* Couleur bleue pour le titre */
 }
 
-/* Conteneur pour chaque paragraphe */
-.container {
-  width: 80%; /* Largeur des conteneurs */
-  max-width: 800px; /* Largeur maximale pour les grands écrans */
-  background-color: white; /* Fond blanc pour les conteneurs */
-  border-radius: 8px; /* Coins arrondis */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour le relief */
-  margin: 10px 0; /* Espacement entre les conteneurs */
-  padding: 20px; /* Espace intérieur */
-  text-align: center; /* Centre le texte */
+.content {
+  max-width: 800px; /* Largeur maximale du conteneur */
+  padding: 20px; /* Espacement intérieur */
+  text-align: center; /* Centre le texte dans chaque paragraphe */
 }
 
-/* Ajoute un peu d'espacement au texte */
-.container p {
-  margin: 0;
+.content p {
+  margin-bottom: 20px; /* Sépare les paragraphes */
   line-height: 1.6; /* Espacement entre les lignes */
 }
+
