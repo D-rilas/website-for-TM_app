@@ -1,6 +1,6 @@
 /* Conteneur principal pour la safe area */
 .container {
-  padding: 30px; /* Ajoute une zone de sécurité autour du contenu */
+  padding: 50px; /* Augmente la zone de sécurité autour du contenu */
   box-sizing: border-box; /* Inclut le padding dans les dimensions du conteneur */
 }
 
