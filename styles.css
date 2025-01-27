@@ -29,9 +29,10 @@ h1 {
 }
 
 /* Style du message d'introduction */
-.intro-message {
+.intro-message,
+#bottom p {
   font-size: 1.2rem;
-  text-align: center;
+  text-align: center; /* Centrage du texte */
   margin: 20px 0;
   color: white;
 }
@@ -98,6 +99,26 @@ main {
 
 .floating-button:hover {
   background-color: #155cb0; /* Couleur plus foncée au survol */
+  transform: scale(1.1); /* Légère augmentation au survol */
+}
+
+/* Bouton de téléchargement */
+.download-app {
+  display: block; /* Pour centrer le bouton avec margin auto */
+  margin: 20px auto; /* Centré horizontalement */
+  padding: 10px 20px;
+  background-color: #87ceeb; /* Bleu ciel */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px; /* Bords arrondis */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-app:hover {
+  background-color: #66b2d6; /* Couleur bleu ciel plus foncée au survol */
   transform: scale(1.1); /* Légère augmentation au survol */
 }
 
