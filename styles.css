@@ -111,9 +111,29 @@ main {
     font-size: 2rem;
   }
 
-  .floating-button {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
+
+/* Bouton flottant */
+.floating-button {
+  position: fixed;
+  bottom: 20px; /* Position par rapport au bas */
+  right: 20px; /* Position par rapport au bord droit */
+  background-color: #1a73e8; /* Couleur bleue */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Bouton rond */
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000; /* Toujours au-dessus du contenu */
 }
+
+.floating-button:hover {
+  background-color: #155cb0; /* Couleur plus foncée au survol */
+  transform: scale(1.1); /* Légère augmentation au survol */
+}
+
+
