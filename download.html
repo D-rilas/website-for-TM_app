@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download App</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Réutilise le CSS de la page d'accueil -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="crown">👑</div>
+      <h1>Congratulations, Brave Adventurer!</h1>
+      <p class="intro-message">
+        By reaching this point, you’ve proven your worth as a fearless tester of my app! 🎉
+      </p>
+    </header>
+
+    <main class="download-page">
+      <p>
+        If you’ve made it this far, you’re probably on an Android device. 🛡️ Before you can install the app, a quick reminder: 
+        you’ll need to <strong>enable the installation of apps from unknown sources</strong>. Don’t worry, it’s not as scary as it sounds. 
+        (And no, it won’t make your phone explode—at least, I hope not! 🤞)
+      </p>
+      <p>
+        Should you encounter any dragons (bugs), remember: you know where to find me. ⚔️
+      </p>
+      <p>
+        Now, go forth and install the app. May your device be stable, and your experience bug-free! 🏰
+      </p>
+      <button class="download-app" onclick="retryDownload()">Download App</button>
+    </main>
+  </div>
+
+  <script>
+    function retryDownload() {
+      const link = document.createElement("a");
+      link.href = "./app_to_download/app-release.apk";
+      link.download = "app-release.apk";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
 
