@@ -1,6 +1,6 @@
 /* Conteneur principal pour la safe area */
 .container {
-  padding: 15px; /* Zone de sécurité réduite à 15px */
+  padding: 15px; /* Zone de sécurité */
   box-sizing: border-box; /* Inclut le padding dans les dimensions du conteneur */
 }
 
@@ -80,41 +80,6 @@ main {
 /* Bouton flottant */
 .floating-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #1a73e8;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.floating-button:hover {
-  background-color: #155cb0;
-  transform: scale(1.1);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .box {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-
-/* Bouton flottant */
-.floating-button {
-  position: fixed;
   bottom: 20px; /* Position par rapport au bas */
   right: 20px; /* Position par rapport au bord droit */
   background-color: #1a73e8; /* Couleur bleue */
@@ -136,4 +101,22 @@ main {
   transform: scale(1.1); /* Légère augmentation au survol */
 }
 
+/* Responsive design */
+@media (max-width: 768px) {
+  .box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .floating-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
 
