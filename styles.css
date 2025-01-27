@@ -8,13 +8,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100vh;
 }
 
+/* Titre principal */
 header {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 header .crown {
@@ -33,37 +34,43 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px; /* Espacement entre les boîtes */
+  width: 100%;
+  max-width: 800px; /* Largeur maximale pour un rendu responsive */
 }
 
 /* Style des boîtes */
 .box {
-  width: 80%;
-  max-width: 300px;
-  padding: 20px;
+  background-color: black;
   border: 2px solid white;
   border-radius: 10px;
+  padding: 20px;
   text-align: center;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  background-color: transparent;
+  width: 100%;
+  max-width: 700px; /* Largeur des boîtes */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Brillance au survol */
+/* Effets au survol */
 .box:hover {
-  background-color: white;
-  color: black;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   transform: scale(1.05); /* Légère augmentation de taille */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Espacement du texte dans chaque boîte */
+.box p {
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* Responsive design */
 @media (max-width: 600px) {
-  .box {
-    width: 90%; /* Réduction de la largeur sur mobile */
+  h1 {
+    font-size: 2rem;
   }
 
-  h1 {
-    font-size: 2rem; /* Taille de titre réduite sur mobile */
+  .box {
+    padding: 15px;
+    width: 90%; /* Réduction de la largeur sur petits écrans */
   }
 }
