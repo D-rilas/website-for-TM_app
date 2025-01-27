@@ -104,10 +104,10 @@ main {
 
 /* Bouton de téléchargement */
 .download-app {
-  display: block; /* Pour centrer le bouton avec margin auto */
+  display: inline-block; /* Pour centrer le bouton */
   margin: 20px auto; /* Centré horizontalement */
-  padding: 10px 20px;
-  background-color: #87ceeb; /* Bleu ciel */
+  padding: 12px 25px;
+  background-color: #87ceeb; /* Bleu ciel épique */
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -118,8 +118,21 @@ main {
 }
 
 .download-app:hover {
-  background-color: #66b2d6; /* Couleur bleu ciel plus foncée au survol */
-  transform: scale(1.1); /* Légère augmentation au survol */
+  background-color: #66b2d6; /* Bleu ciel plus foncé au survol */
+  transform: scale(1.1);
+}
+
+/* Section spécifique pour la page de remerciement (download.html) */
+.download-page {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.download-page p {
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 /* Responsive design */
@@ -140,4 +153,3 @@ main {
     font-size: 1.2rem;
   }
 }
-
